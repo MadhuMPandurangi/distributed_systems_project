@@ -4,14 +4,14 @@ import socket
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # Define the server host and port
-host = "10.60.29.41"
+host = "192.168.0.109"
 port = 12345
 
 # Connect to the server
 client_socket.connect((host, port))
 
 # Specify the file to send
-file_name = "example.txt"  # Change this to the file you want to send
+file_name = "sample.txt"  # Change this to the file you want to send
 
 # Send the file name to the server
 client_socket.send(file_name.encode('utf-8'))
